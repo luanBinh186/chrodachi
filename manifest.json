@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Page Timer",
+    "description": "How long have I been on this page?",
+    "version": "1.0",
+    "icons": {
+        "19": "images/browser-action-19.png",
+        "38": "images/browser-action-38.png",
+        "76": "images/browser-action-76.png",
+        "152": "images/browser-action-152.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "service-worker/service-worker.js",
+        "type": "module"
+    },
+    "host_permissions": [
+        "https://developer.chrome.com/*"
+    ],
+    "permissions": [
+        "storage",
+        "tabGroups",
+        "tabs"
+    ]
+}
