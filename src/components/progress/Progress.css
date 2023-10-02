@@ -1,0 +1,42 @@
+/* evolution */
+.header {
+    width: 100%;
+    display: flex;
+}
+
+.evolution-outer-container {
+    display: flex;
+    width: 10rem;
+    flex-wrap: wrap;
+}
+
+.tips-container {
+    width: 100%;
+}
+
+.evolution-container {
+    width: 100%;
+}
+
+.evolution-outer-container .title {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5px;
+    font-family: 'visitor';
+    color: #545454;
+    font-weight: normal;
+}
+
+.hp-inner-container {
+    height: 15px;
+    width: 100%;
+    border: 2px solid #545454;
+    border-radius: 8px;
+}
+
+.hp-indicator {
+    display: block;
+    height: inherit;
+    width: 10%;
+    background: #67b622;
+}
