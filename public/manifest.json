@@ -13,10 +13,11 @@
         "default_popup": "index.html"
     },
     "background": {
-        "service_worker": "service-worker/service-worker.js",
+        "service_worker": "service-worker/ServiceWorker.js",
         "type": "module"
     },
     "permissions": [
-        "storage"
+        "storage",
+        "alarms"
     ]
 }
