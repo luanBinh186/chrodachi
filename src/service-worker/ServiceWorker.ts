@@ -1,13 +1,13 @@
 import MonsterModel from "../models/MonsterModel.js";
-import { formatDuration, monsterFactory } from "../utils/Helper.js";
-import { getMonster, setMonster } from "../utils/Storage.js";
+import { formatDuration, monsterFactory } from "../utils/Helper";
+import { getMonster, setMonster } from "../utils/Storage";
 
 chrome.action.setBadgeText({ 'text': '?' });
 chrome.action.setBadgeBackgroundColor({ 'color': "#f6d7b1" });
 
 chrome.runtime.onInstalled.addListener(() => {
   chrome.alarms.create({
-    periodInMinutes: 1
+    periodInMinutes: 2.0
   })
 });
 

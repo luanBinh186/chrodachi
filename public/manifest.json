@@ -10,10 +10,10 @@
         "152": "assets/browser-action/browser-action-152.png"
     },
     "action": {
-        "default_popup": "index.html"
+        "default_popup": "popup.html"
     },
     "background": {
-        "service_worker": "service-worker/ServiceWorker.js",
+        "service_worker": "service.js",
         "type": "module"
     },
     "permissions": [
