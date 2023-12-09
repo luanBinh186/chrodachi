@@ -1,6 +1,6 @@
 import MonsterModel from "../models/MonsterModel.js";
-import { formatDuration, monsterFactory } from "../utils/Helper";
-import { getMonster, setMonster } from "../utils/Storage";
+import { formatDuration, monsterFactory } from "../utils/Helper.js";
+import { getMonster, setMonster } from "../utils/Storage.js";
 
 chrome.action.setBadgeText({ 'text': '?' });
 chrome.action.setBadgeBackgroundColor({ 'color': "#f6d7b1" });
