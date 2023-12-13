@@ -7,29 +7,29 @@
   
   .animated-gif {
     position: absolute;
-    animation: moving 8s linear infinite
+    animation: moving 14s linear infinite
   }
   
   @keyframes moving {
     0%,
     100% {
       left: 0rem;
-      transform: scaleX(1);
+      transform: scaleX(-1);
     }
   
     49.9% {
       left: 8rem;
-      transform: scaleX(1);
+      transform: scaleX(-1);
     }
   
     50% {
       left: 8rem;
-      transform: scaleX(-1);
+      transform: scaleX(1);
     }
   
     99.9% {
       left: 0rem;
-      transform: scaleX(-1);
+      transform: scaleX(1);
     }
   }
   

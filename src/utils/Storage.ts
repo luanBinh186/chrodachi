@@ -1,8 +1,7 @@
 import MonsterModel from "../models/MonsterModel"
 
-
 const key = 'monster'
-export function getMonster(): Promise<MonsterModel> {
+export function GetMonster(): Promise<MonsterModel> {
     return new Promise((resolve) => {
         chrome.storage.local.get(key, (res: any) => {
             resolve(res[key] ? res[key] : new MonsterModel())
@@ -10,10 +9,10 @@ export function getMonster(): Promise<MonsterModel> {
     })
 }
 
-export function setMonster(monster: MonsterModel): Promise<boolean> {
+export function SetMonster(monster: MonsterModel): Promise<MonsterModel> {
     return new Promise((resolve) => {
         chrome.storage.local.set({ 'monster': monster }, () => {
-            resolve(true)
+            resolve(monster)
         })
     })
 }

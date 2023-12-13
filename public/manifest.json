@@ -5,9 +5,7 @@
     "version": "1.0",
     "icons": {
         "19": "assets/browser-action/action-19.png",
-        "38": "assets/browser-action/action-38.png",
-        "76": "assets/browser-action/browser-action-76.png",
-        "152": "assets/browser-action/browser-action-152.png"
+        "38": "assets/browser-action/action-38.png"
     },
     "action": {
         "default_popup": "popup.html"

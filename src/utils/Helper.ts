@@ -1,7 +1,4 @@
-import MonsterModel from "../models/MonsterModel";
-
-
-export function formatDuration(d: any): string {
+export function FormatDuration(d: any): string {
     if (d < 0) {
         return "?";
     }
@@ -10,11 +7,4 @@ export function formatDuration(d: any): string {
         return x < 10 ? "0" + x : x;
     }
     return Math.floor(d / divisor[0]) + ":" + pad(Math.floor((d % divisor[0]) / divisor[1]));
-}
-
-export function monsterFactory(m: MonsterModel) {
-    if (new Date(m.DateOfBirth).getUTCDate() !== new Date().getUTCDate()) {
-        return new MonsterModel();
-    }
-    return m;
 }
