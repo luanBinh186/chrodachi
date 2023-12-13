@@ -1,15 +1,12 @@
 class MonsterModel {
+    Id: string = ''
     Name: string = '';
-    Type: number = randomMonster();
+    Type: number = 0;
     Level: number = 0;
     Exp: number = 0;
+    Target: number = 0;
+    Evolutions: string[] = [];
     DateOfBirth: string = new Date().toUTCString()
 }
 
 export default MonsterModel
-
-const MonsterType: number = 5
-
-function randomMonster(): number {
-    return Math.floor(Math.random() * MonsterType) + 1;
-}

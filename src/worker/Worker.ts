@@ -1,26 +1,26 @@
-import MonsterModel from "../models/MonsterModel.js";
-import { formatDuration, monsterFactory } from "../utils/Helper.js";
-import { getMonster, setMonster } from "../utils/Storage.js";
+import MonsterModel from "../models/MonsterModel";
+import { MonsterFactory, UpdateMonster } from "../service/MonsterService";
+import { FormatDuration } from "../utils/Helper";
+import { GetMonster, SetMonster } from "../utils/Storage";
 
-chrome.action.setBadgeText({ 'text': '?' });
+chrome.action.setBadgeText({ 'text': '0:00' });
 chrome.action.setBadgeBackgroundColor({ 'color': "#f6d7b1" });
 
 chrome.runtime.onInstalled.addListener(() => {
-  chrome.alarms.create({
-    periodInMinutes: 2.0
-  })
+  chrome.alarms.create({periodInMinutes: 1.0})
 });
 
 chrome.alarms.onAlarm.addListener(() => {
-  getMonster().then((rs: MonsterModel) => {
-    const monster = monsterFactory(rs);
-    monster.Exp = new Date().getTime() - new Date(monster.DateOfBirth).getTime()
-    setMonster(monster).then((res) => { res && UpdateMonster(monster.Exp); }
-    )
+  GetMonster().then((rs: MonsterModel) => {
+    MonsterFactory(rs).then(monster => {
+      const exp = new Date().getTime() - new Date(monster.DateOfBirth).getTime()
+      UpdateMonster(monster, exp)
+        .then(monster => SetMonster(monster)
+          .then(rs => UpdateBadge(rs)))
+    });
   });
 })
 
-function UpdateMonster(exp: number) {
-  let description = formatDuration(exp);
-  chrome.action.setBadgeText({ 'text': description });
+function UpdateBadge(monster: MonsterModel) {
+  chrome.action.setBadgeText({ 'text': FormatDuration(monster.Exp) });
 }

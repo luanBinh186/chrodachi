@@ -1,30 +1,30 @@
 {
     "monsters": [
         {
-            "id": "8aeee63c-5afd-41cb-a6ba-f9f697351a92",
-            "type": 0,
-            "name": "Zurumon",
-            "exp": 10,
-            "evolution": [
+            "Id": "8aeee63c-5afd-41cb-a6ba-f9f697351a92",
+            "Type": 0,
+            "Name": "Zurumon",
+            "Target": 120000,
+            "Evolutions": [
                 "89442758-9fb3-40da-94ca-704478c2f43f"
             ]
         },
         {
-            "id": "89442758-9fb3-40da-94ca-704478c2f43f",
-            "type": 1,
-            "name": "Pagumon",
-            "exp": 20,
-            "evolution": [
+            "Id": "89442758-9fb3-40da-94ca-704478c2f43f",
+            "Type": 1,
+            "Name": "Pagumon",
+            "Target": 720000,
+            "Evolutions": [
                 "fd525df8-61ae-411a-8a81-93fccb30d6af",
                 "5ebc747a-5148-4f5c-a712-604838e3c149"
             ]
         },
         {
-            "id": "fd525df8-61ae-411a-8a81-93fccb30d6af",
-            "type": 2,
-            "name": "Gazimon",
-            "exp": 20,
-            "evolution": [
+            "Id": "fd525df8-61ae-411a-8a81-93fccb30d6af",
+            "Type": 2,
+            "Name": "Gazimon",
+            "Target": 2520000,
+            "Evolutions": [
                 "cc05597c-2cb5-4941-8b69-bc5ca1d23eba",
                 "e03bc4a5-131c-4f74-a935-c9280fbad0bd",
                 "6280433a-91a3-4b0e-9385-6ff2a98fb36a",
@@ -33,11 +33,11 @@
             ]
         },
         {
-            "id": "5ebc747a-5148-4f5c-a712-604838e3c149",
-            "type": 2,
-            "name": "Gizamon",
-            "exp": 20,
-            "evolution": [
+            "Id": "5ebc747a-5148-4f5c-a712-604838e3c149",
+            "Type": 2,
+            "Name": "Gizamon",
+            "Target": 2520000,
+            "Evolutions": [
                 "6280433a-91a3-4b0e-9385-6ff2a98fb36a",
                 "53e4b7dc-b4e2-4c42-a48d-b943b03d76bc",
                 "cd0506b1-6e88-45bc-8495-281730622a1a",
@@ -46,135 +46,135 @@
             ]
         },
         {
-            "id": "e03bc4a5-131c-4f74-a935-c9280fbad0bd",
-            "type": 2,
-            "name": "Cyclomon",
-            "exp": 20,
-            "evolution": [
+            "Id": "e03bc4a5-131c-4f74-a935-c9280fbad0bd",
+            "Type": 2,
+            "Name": "Cyclomon",
+            "Target": 2520000,
+            "Evolutions": [
                 "3d19bded-0c79-477c-a4fc-b090fbc32eff"
             ]
         },
         {
-            "id": "cc05597c-2cb5-4941-8b69-bc5ca1d23eba",
-            "type": 2,
-            "name": "Darktyranomon",
-            "exp": 20,
-            "evolution": [
+            "Id": "cc05597c-2cb5-4941-8b69-bc5ca1d23eba",
+            "Type": 2,
+            "Name": "Darktyranomon",
+            "Target": 2520000,
+            "Evolutions": [
                 "2792f812-50e0-4cdf-af2c-197a94c3371a"
             ]
         },
         {
-            "id": "cbb3bef0-1401-4ee8-aa8a-6decb0e21cf8",
-            "type": 2,
-            "name": "Deltamon",
-            "exp": 20,
-            "evolution": [
+            "Id": "cbb3bef0-1401-4ee8-aa8a-6decb0e21cf8",
+            "Type": 2,
+            "Name": "Deltamon",
+            "Target": 2520000,
+            "Evolutions": [
                 "3d19bded-0c79-477c-a4fc-b090fbc32eff"
             ]
         },
         {
-            "id": "6280433a-91a3-4b0e-9385-6ff2a98fb36a",
-            "type": 2,
-            "name": "Devidramon",
-            "exp": 20,
-            "evolution": [
+            "Id": "6280433a-91a3-4b0e-9385-6ff2a98fb36a",
+            "Type": 2,
+            "Name": "DevIdramon",
+            "Target": 2520000,
+            "Evolutions": [
                 "2792f812-50e0-4cdf-af2c-197a94c3371a"
             ]
         },
         {
-            "id": "37ad0641-8975-48de-9c23-3e69f4e206a6",
-            "type": 2,
-            "name": "Flymon",
-            "exp": 20,
-            "evolution": [
+            "Id": "37ad0641-8975-48de-9c23-3e69f4e206a6",
+            "Type": 2,
+            "Name": "Flymon",
+            "Target": 2520000,
+            "Evolutions": [
                 "2792f812-50e0-4cdf-af2c-197a94c3371a"
             ]
         },
         {
-            "id": "cd0506b1-6e88-45bc-8495-281730622a1a",
-            "type": 2,
-            "name": "Raremon",
-            "exp": 20,
-            "evolution": [
+            "Id": "cd0506b1-6e88-45bc-8495-281730622a1a",
+            "Type": 2,
+            "Name": "Raremon",
+            "Target": 2520000,
+            "Evolutions": [
                 "c7a95226-a9b6-4fed-ae95-2faa30597802"
             ]
         },
         {
-            "id": "53e4b7dc-b4e2-4c42-a48d-b943b03d76bc",
-            "type": 2,
-            "name": "Tuskmon",
-            "exp": 20,
-            "evolution": [
+            "Id": "53e4b7dc-b4e2-4c42-a48d-b943b03d76bc",
+            "Type": 2,
+            "Name": "Tuskmon",
+            "Target": 2520000,
+            "Evolutions": [
                 "3d19bded-0c79-477c-a4fc-b090fbc32eff"
             ]
         },
         {
-            "id": "c5b4b6df-1257-43ff-b5c2-7c45bdc76ea1",
-            "type": 2,
-            "name": "Gaioumon",
-            "exp": 20,
-            "evolution": []
+            "Id": "c5b4b6df-1257-43ff-b5c2-7c45bdc76ea1",
+            "Type": 2,
+            "Name": "Gaioumon",
+            "Target": 2520000,
+            "Evolutions": []
         },
         {
-            "id": "10cc81a5-c993-49a8-be5e-6c70cced7626",
-            "type": 2,
-            "name": "Raidenmon",
-            "exp": 20,
-            "evolution": [],
-            "image": "Raidenmon.gif"
+            "Id": "10cc81a5-c993-49a8-be5e-6c70cced7626",
+            "Type": 4,
+            "Name": "RaIdenmon",
+            "Target": 9600000,
+            "Evolutions": [],
+            "image": "RaIdenmon.gif"
         },
         {
-            "id": "13c4f62b-85a5-468b-b963-83abafed6857",
-            "type": 2,
-            "name": "Chaosdramon",
-            "exp": 20,
-            "evolution": [],
+            "Id": "13c4f62b-85a5-468b-b963-83abafed6857",
+            "Type": 5,
+            "Name": "Chaosdramon",
+            "Target": -1,
+            "Evolutions": [],
             "image": "Chaosdramon.gif"
         },
         {
-            "id": "2792f812-50e0-4cdf-af2c-197a94c3371a",
-            "type": 2,
-            "name": "Metaltyranomon",
-            "exp": 20,
-            "evolution": [
+            "Id": "2792f812-50e0-4cdf-af2c-197a94c3371a",
+            "Type": 3,
+            "Name": "Metaltyranomon",
+            "Target": 6000000,
+            "Evolutions": [
                 "951713c4-ed12-4997-84a2-5a56d92de2a1"
             ],
             "image": "Metaltyranomon.gif"
         },
         {
-            "id": "951713c4-ed12-4997-84a2-5a56d92de2a1",
-            "type": 2,
-            "name": "Mugendramon",
-            "exp": 20,
-            "evolution": [
+            "Id": "951713c4-ed12-4997-84a2-5a56d92de2a1",
+            "Type": 4,
+            "Name": "Mugendramon",
+            "Target": 9600000,
+            "Evolutions": [
                 "13c4f62b-85a5-468b-b963-83abafed6857",
                 "16606af7-8ff8-4633-953d-1a9f36b4bd1f"
             ]
         },
         {
-            "id": "c7a95226-a9b6-4fed-ae95-2faa30597802",
-            "type": 2,
-            "name": "Ex-tyranomon",
-            "exp": 20,
-            "evolution": [
+            "Id": "c7a95226-a9b6-4fed-ae95-2faa30597802",
+            "Type": 3,
+            "Name": "Ex-tyranomon",
+            "Target": 6000000,
+            "Evolutions": [
                 "c5b4b6df-1257-43ff-b5c2-7c45bdc76ea1"
             ]
         },
         {
-            "id": "3d19bded-0c79-477c-a4fc-b090fbc32eff",
-            "type": 2,
-            "name": "Nanomon",
-            "exp": 20,
-            "evolution": [
+            "Id": "3d19bded-0c79-477c-a4fc-b090fbc32eff",
+            "Type": 3,
+            "Name": "Nanomon",
+            "Target": 6000000,
+            "Evolutions": [
                 "10cc81a5-c993-49a8-be5e-6c70cced7626"
             ]
         },
         {
-            "id": "16606af7-8ff8-4633-953d-1a9f36b4bd1f",
-            "type": 2,
-            "name": "Millenniumon",
-            "exp": 20,
-            "evolution": []
+            "Id": "16606af7-8ff8-4633-953d-1a9f36b4bd1f",
+            "Type": 5,
+            "Name": "Millenniumon",
+            "Target": -1,
+            "Evolutions": []
         }
     ]
 }
