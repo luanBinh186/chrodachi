@@ -7,12 +7,11 @@ import { GetMonster } from '../utils/Storage';
 
 function App() {
   const [monster, setMonster] = useState(new MonsterModel())
-
   const getMonster = async () => {
     setMonster(await GetMonster());
   };
-
   useEffect(() => {
+    getMonster();
     const interval = setInterval(() => {
       getMonster();
     }, 60000);

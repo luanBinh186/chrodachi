@@ -1,11 +1,11 @@
 export class Constants {
     static readonly TypeMonster = [
-       'baby1',
+        'baby1',
         'baby2',
         'child',
         'adult',
-       'perfect',
+        'perfect',
         'ultimate',
-       'ultimate-plus'
+        'ultimate-plus'
     ]
 }

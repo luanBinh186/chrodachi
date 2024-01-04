@@ -13,8 +13,8 @@ chrome.runtime.onInstalled.addListener(() => {
 chrome.alarms.onAlarm.addListener(() => {
   GetMonster().then((rs: MonsterModel) => {
     MonsterFactory(rs).then(monster => {
-      const exp = new Date().getTime() - new Date(monster.DateOfBirth).getTime()
-      UpdateMonster(monster, exp)
+      monster.Exp = new Date().getTime() - new Date(monster.DateOfBirth).getTime()
+      UpdateMonster(monster)
         .then(monster => SetMonster(monster)
           .then(rs => UpdateBadge(rs)))
     });

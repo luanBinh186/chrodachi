@@ -55,9 +55,6 @@
             ]
         },
         {
-            "_id": {
-                "$oid": "657f10c5a61a999a70565e71"
-            },
             "Id": "cc05597c-2cb5-4941-8b69-bc5ca1d23eba",
             "Type": 3,
             "Name": "Darktyranomon",

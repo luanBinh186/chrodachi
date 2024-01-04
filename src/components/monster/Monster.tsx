@@ -7,13 +7,12 @@ function Monster(props: any) {
     useEffect(() => {
         let type = Number.parseInt(props?.monster?.Type)
         let name = props?.monster?.Name
-        console.log(name)
         setSourceImg(`/assets/monsters/${Constants.TypeMonster[type]}/${name}.gif`)
-    }, [props.monster])
+    }, [props, props?.monster])
 
     return (
         <div className="animation-container">
-            <img src='/assets/monsters/baby1/Zurumon.gif' alt="Animated GIF" className="animated-gif" />
+            <img src={sourceImg} alt="monster" className="animated-gif" />
         </div>
     )
 }

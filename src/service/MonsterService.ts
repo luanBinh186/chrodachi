@@ -8,17 +8,17 @@ export function MonsterFactory(monster: MonsterModel): Promise<MonsterModel> {
     return Promise.resolve(monster);
 }
 
-export function GetMonsterById(id: string, exp: number): Promise<MonsterModel> {
-    const m = Database.monsters.find(x => x.Id === id) as MonsterModel
-    m.Exp = exp
+export function GetMonster(monster: MonsterModel, id: string): Promise<MonsterModel> {
+    const m = Database.monsters.find(x => x.Id === (id || monster.Id)) as MonsterModel
+    m.Exp = monster.Exp
+    m.DateOfBirth = monster.DateOfBirth
     return Promise.resolve(m)
 }
 
-export function UpdateMonster(monster: MonsterModel, exp: number): Promise<MonsterModel> {
-    monster.Exp = exp
+export function UpdateMonster(monster: MonsterModel): Promise<MonsterModel> {
     if (monster.Exp < monster.Target || monster.Evolutions.length === 0)
         return Promise.resolve(monster)
-    return EvoMonster(monster, exp)
+    return EvoMonster(monster)
 }
 
 function InitBabyMonster(): Promise<MonsterModel> {
@@ -27,8 +27,8 @@ function InitBabyMonster(): Promise<MonsterModel> {
     return Promise.resolve(monster)
 }
 
-function EvoMonster(monster: MonsterModel, exp: number): Promise<MonsterModel> {
-    return GetMonsterById(monster.Evolutions[GetRandomMonster(monster.Evolutions.length)], exp);
+function EvoMonster(monster: MonsterModel): Promise<MonsterModel> {
+    return GetMonster(monster, monster.Evolutions[GetRandomMonster(monster.Evolutions.length)]);
 }
 
 function GetRandomMonster(total: number): number {
