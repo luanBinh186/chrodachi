@@ -1,0 +1,21 @@
+{
+    "manifest_version": 3,
+    "name": "Chrodachi",
+    "description": "How long have I been on google?",
+    "version": "1.0",
+    "icons": {
+        "19": "assets/browser-action/action-19.png",
+        "38": "assets/browser-action/action-38.png"
+    },
+    "action": {
+        "default_popup": "popup.html"
+    },
+    "background": {
+        "service_worker": "service.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+        "alarms"
+    ]
+}

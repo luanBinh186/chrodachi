@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'visitor';
+  src: url('/public/fonts/visitor.ttf') format("truetype");
+}
+
+body {
+  width: 10rem;
+  height: 8rem;
+}
